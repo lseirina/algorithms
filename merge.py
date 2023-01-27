@@ -1,4 +1,4 @@
-def merge_sort(list1, list2):
+def merge(list1, list2):
     combined = []
     i = 0
     j = 0
@@ -22,7 +22,7 @@ def merge_sort(list1, list2):
             
             
             
-print(merge_sort([1,3,5,7], [2,4,6,8,9]))         
+print(merge([1,3,5,7], [2,4,6,8,9]))         
             
             
             
