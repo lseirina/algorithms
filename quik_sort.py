@@ -14,8 +14,18 @@ def pivot(my_list, pivot_index, end_index):
             swap(my_list, swap_index, i)
     swap(my_list, pivot_index, swap_index)
     return swap_index
+
+def quik_sort_helper(my_list, left, right):
+    if left < right:
+        pivot_index = pivot(my_list, left, right)
+        quik_sort_helper(my_list, left, pivot_index-1)
+        quik_sort_helper(my_list,pivot_index+1, right)
+    return my_list
     
+def quik_sort(my_list):
+    return quik_sort_helper(my_list, 0, len(my_list)-1)
     
+
 my_list = [4, 6, 1, 7, 3, 2, 5]
-print(pivot(my_list, 0, 6))
-print(my_list)
+print(quik_sort(my_list))
+#print(my_list)
