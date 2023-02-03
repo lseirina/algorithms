@@ -6,7 +6,7 @@ def insertion_sort(my_list):
             
             my_list[j+1] = my_list[j]
             my_list[j] = temp
-            j -=1
+            j -= 1
     return my_list
   
   

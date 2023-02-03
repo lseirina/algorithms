@@ -10,7 +10,7 @@ def item_in_common(list1, list2):
                 return True
 
     return False
-"""
+
 # the second approach is O(n) is more efficient to creat dictionary for each list:
 def item_in_common(list1, list2):
     my_dict = {}
@@ -23,6 +23,12 @@ def item_in_common(list1, list2):
             return True
 
     return False
-
+    """
+# the third approach, which i made by myself:
+def item_in_common(list1, list2):
+    for i in list2:
+        if i in list1:
+            return True
+    return False
 
 print(item_in_common(list1,list2))
