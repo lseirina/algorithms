@@ -22,7 +22,12 @@ def calPoints(operations):
         
         
     return sum(result)
-            
+
+
+
+
+
+
 print(calPoints(["5","2","C","D","+"]))
             
             
